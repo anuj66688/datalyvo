@@ -1,0 +1,33 @@
+* { box-sizing: border-box; }
+html, body { margin: 0; min-height: 100%; }
+body { background: #f7f8fc; color: #111827; font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+button, input { font: inherit; }
+.page { min-height: 100vh; padding: 28px; }
+.shell { max-width: 1180px; margin: 0 auto; }
+.nav { display:flex; justify-content:space-between; align-items:center; padding: 10px 0 52px; }
+.logo { font-weight: 800; letter-spacing: -0.04em; font-size: 22px; }
+.badge { font-size: 12px; border: 1px solid #e5e7eb; background:#fff; padding: 7px 10px; border-radius: 999px; color:#6b7280; }
+.hero { text-align:center; padding: 30px 0 36px; }
+.eyebrow { color:#6d5dfc; font-weight:700; font-size:13px; }
+h1 { font-size: clamp(42px, 7vw, 76px); line-height:.98; letter-spacing:-.065em; margin: 12px auto 18px; max-width: 850px; }
+.sub { color:#6b7280; max-width:620px; margin:0 auto; font-size:17px; line-height:1.6; }
+.card { background:#fff; border:1px solid #e7e8ee; border-radius:22px; box-shadow:0 20px 50px rgba(17,24,39,.06); }
+.upload { margin: 20px auto 44px; max-width: 760px; padding: 42px; text-align:center; border:1.5px dashed #cfd2dc; cursor:pointer; transition:.2s; }
+.upload:hover { border-color:#6d5dfc; transform:translateY(-1px); }
+.upload input { display:none; }
+.upload-title { font-weight:750; font-size:19px; margin-bottom:8px; }
+.muted { color:#8a8f9d; font-size:14px; }
+.btn { margin-top:20px; border:0; background:#111827; color:#fff; padding:12px 18px; border-radius:12px; cursor:pointer; font-weight:700; }
+.btn:disabled { opacity:.5; cursor:not-allowed; }
+.error { margin: 0 auto 24px; max-width:760px; padding:14px 16px; color:#b42318; background:#fff1f0; border:1px solid #ffd5d2; border-radius:12px; }
+.dashboard { padding-bottom:50px; }
+.metrics { display:grid; grid-template-columns:repeat(4,1fr); gap:14px; margin-bottom:20px; }
+.metric { padding:22px; }
+.metric-label { color:#737887; font-size:13px; }
+.metric-value { margin-top:8px; font-size:28px; font-weight:800; letter-spacing:-.03em; }
+.table-card { padding:24px; overflow:auto; }
+.section-title { font-size:18px; font-weight:800; margin-bottom:16px; }
+table { width:100%; border-collapse:collapse; min-width:620px; }
+th, td { text-align:left; padding:13px 10px; border-bottom:1px solid #eef0f4; font-size:14px; }
+th { color:#6b7280; font-weight:650; }
+@media (max-width: 800px) { .page{padding:18px}.metrics{grid-template-columns:repeat(2,1fr)} .upload{padding:30px 18px} }
